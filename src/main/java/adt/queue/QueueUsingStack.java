@@ -32,8 +32,8 @@ public class QueueUsingStack<T> implements Queue<T> {
 
 	/**
 	 * Método que remove o elemento mais antigo da pilha.
-	 * Para isso, uma manipulação utilizando a pilha auxuliar é realizada.
-	 * Caso a pilha esteja vazia, uma exceção correnponde para a fila é lançada.
+	 * Para isso, uma manipulação utilizando a pilha auxiliar é realizada.
+	 * Caso a pilha esteja vazia, uma exceção corresponde para a fila é lançada.
 	 * 
 	 * @return oldestElement O elemento mais antigo da fila, o qual foi removido
 	 */
@@ -46,7 +46,7 @@ public class QueueUsingStack<T> implements Queue<T> {
 				T removedElement = this.stack1.pop();
 				this.stack2.push(removedElement);
 			} catch (StackUnderflowException e) {
-				throw new QueueUnderflowException();
+				e.printStackTrace();
 			} catch (StackOverflowException e) {
 				e.printStackTrace();
 			}
@@ -54,7 +54,7 @@ public class QueueUsingStack<T> implements Queue<T> {
 
 		T oldestElement;
 		
-		// O elemento mais antigo, localizado no topo da fila auxiliar, é removido
+		// O elemento mais antigo, localizado no topo da fila auxiliar, é removido.
 		try {
 			oldestElement = this.stack2.pop();
 		} catch (StackUnderflowException e) {
@@ -67,7 +67,7 @@ public class QueueUsingStack<T> implements Queue<T> {
 				T removedElement = this.stack2.pop();
 				this.stack1.push(removedElement);
 			} catch (StackUnderflowException e) {
-				throw new QueueUnderflowException();
+				e.printStackTrace();
 			} catch (StackOverflowException e) {
 				e.printStackTrace();
 			}
@@ -78,7 +78,7 @@ public class QueueUsingStack<T> implements Queue<T> {
 
 	/**
 	 * Método que obtém o elemento mais antigo da pilha principal, equivalente ao elemento mais antigo da fila simulada.
-	 * Para isso, uma manipulação utilizando a pilha auxuliar é realizada.
+	 * Para isso, uma manipulação utilizando a pilha auxiliar é realizada.
 	 * 
 	 * @return headElement/null O elemento mais antigo da fila simulada ou null caso a fila estaja vazia
 	 */

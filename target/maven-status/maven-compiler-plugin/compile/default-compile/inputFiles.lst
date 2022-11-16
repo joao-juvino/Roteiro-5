@@ -1,0 +1,10 @@
+/workspaces/Roteiro-5/src/main/java/adt/stack/Stack.java
+/workspaces/Roteiro-5/src/main/java/adt/queue/CircularQueue.java
+/workspaces/Roteiro-5/src/main/java/adt/stack/StackImpl.java
+/workspaces/Roteiro-5/src/main/java/adt/queue/QueueImpl.java
+/workspaces/Roteiro-5/src/main/java/adt/queue/Queue.java
+/workspaces/Roteiro-5/src/main/java/adt/queue/QueueUsingStack.java
+/workspaces/Roteiro-5/src/main/java/adt/stack/StackUnderflowException.java
+/workspaces/Roteiro-5/src/main/java/adt/stack/StackOverflowException.java
+/workspaces/Roteiro-5/src/main/java/adt/queue/QueueOverflowException.java
+/workspaces/Roteiro-5/src/main/java/adt/queue/QueueUnderflowException.java

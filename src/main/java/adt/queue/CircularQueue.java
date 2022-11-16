@@ -6,6 +6,7 @@ public class CircularQueue<T> implements Queue<T> {
 	private int tail;
 	private int head;
 
+	@SuppressWarnings("unchecked")
 	public CircularQueue(int size) {
 		array = (T[]) new Object[size];
 		head = -1;
@@ -58,7 +59,7 @@ public class CircularQueue<T> implements Queue<T> {
 	/**
 	 * Método que obtém o elemento mais antigo da fila
 	 * 
-	 * @return headElement/null o elemento mais antigo da fila ou nulo caso a fila estaja vazia
+	 * @return headElement/null O elemento mais antigo da fila ou nulo caso a fila estaja vazia
 	 */
 	@Override
 	public T head() {
@@ -72,7 +73,7 @@ public class CircularQueue<T> implements Queue<T> {
 	/**
 	 * Método que verifica se a fila está vazia
 	 * 
-	 * @return true/false indicando se a fila está vazia ou não
+	 * @return true/false Indicando se a fila está vazia ou não
 	 */
 	@Override
 	public boolean isEmpty() {
@@ -82,7 +83,7 @@ public class CircularQueue<T> implements Queue<T> {
 	/**
 	 * Método que verifica se a fila está cheia
 	 * 
-	 * @return true/false indicando se a fila está cheia ou não
+	 * @return true/false Indicando se a fila está cheia ou não
 	 */
 	@Override
 	public boolean isFull() {
